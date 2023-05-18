@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!--basic.html-->
+            <!-- block(div,h,p,ul,li)
+            ㄴ가로사이즈 100%, 한줄내리기, 
+            ㄴ스타일제약(x)
+        
+            inline(a,img,span,b)
+            ㄴ콘텐츠의 크기만큼 사이즈 설정
+            ㄴ한줄내리기(x)
+            ㄴ스타일제약(o)-> 사이즈, 여백
+
+            ※ block태그 안에서 inline 태그 사용 -->
+        
+
+<div class="menu">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">SERVISE</a>
+
+</div>
+<style>
+    .menu{
+        width:1750px;
+        border:1px solid #000;
+        text-align: right;
+        margin: 60px auto;
+        /* left,right,center (부모안 inline자손을 정렬할 때 사용) */
+    }
+    .menu > a{
+        margin:0 20px; 
+        color: #000;
+        text-decoration: none;
+        /* margin 60px 60px 60px 60px 12(상), 3(우), 6(하), 9(좌),
+        margin 60px 60px 60px 상,하,좌우
+        margin 60px 60px 상하, 좌우
+        margin 60px 상하좌우 */
+    }
+
+</style>
+
+<div class="visual">
+<!-- <img src=""  alt="경로를 찾지 못했을때의 제목"  title="마우스 올렸을 때의 제목">  
+    ./ (현재폴더),  ../ (상위폴더) -->
+        <img src="../img/img_good2.jpg" alt="비주얼이미지"  title="광고아님">
+                  
+</div>
+<style>
+.visual{ width: 1750px; 
+         margin:0  auto;
+         }
+.visual > img{width:100%}
+
+</style>
+
+<div class="txt-1">
+<b>World's hottest destinations for vegans</b>
+<p>
+    Europe national glove hotsposts hiking miles sleep Turkey
+    international Tripit paris. Amsterdam national earth flexi
+    billity vus diary tour peratior uncharted maps Europe.
+    Guide frequent flyuer yacht miles chartering. the China
+    country hospitality spa Paris luxury.
+</p>
+<a href="#"> Read More></a>
+</div>
+<style>
+    .txt-1{ width: 1750px;
+            margin:130px auto 110px auto;}
+    .txt-1 > b{ font-size:74px;}
+    .txt-1 > p{ font-size:36px;
+               margin:52px 0;
+               line-height: 43px;    /*줄간격*/
+               color: #545454;
+               
+        }
+    .txt-1 > a{ font-size:36px;
+               background: #D9D9D9;
+               padding:20px 20px;
+               display: inline-block;
+               border-radius: 40px;
+               text-decoration: none;
+               color:#000;
+               
+            }
+
+
+</style>
+
+    <div class="txt-2">
+        <div><img src="./img/img_ not bad.jpg" alt=""></div>
+        <div> 
+            <b>An Amazing Journey 
+            Through The Mountains.
+            </b>
+            <p>Europe national glove hotsposts hiking miles sleep Turkey
+            international Tripit paris. Amsterdam national earth flexi
+            billity vus diary tour peratior uncharted maps Europe.
+            Guide frequent flyuer yacht miles chartering miles.
+            </p>
+    </div>
+    </div>
+    <style>
+        .txt-2{display: flex;
+            align-items: center}
+        .txt-2 > div{width: 50%;}
+        .txt-2 > div > img{ width:100%}
+        .txt-2 > div > b{font-size:40px;}
+        .txt-2 > div > p{font-size:34px;
+                        color:#545454;
+                    }
+    </style>
+
+
+
+
+</body>
+</html>
+
+
+
