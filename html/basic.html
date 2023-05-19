@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+            <!-- 전체그룹(CTRL+/) 주석처리 --> 
+
             <!--basic.html-->
             <!-- block(div,h,p,ul,li)
             ㄴ가로사이즈 100%, 한줄내리기, 
@@ -107,16 +109,47 @@
             </p>
     </div>
     </div>
+    <div class="txt-2 reverse" alt="">
+        <div><img src="./img/img_very good.jpg"></div>
+        <div>
+            <b>Tips for Traveling in Winter season </b>
+            <p>Europe national glove hotsposts hiking miles sleep Turkey
+                international Tripit paris. Amsterdam national earth flexi
+                billity vus diary tour peratior uncharted maps Europe.
+                Guide frequent flyuer yacht miles chartering miles.
+            </p>
+            <p>Europe national glove hotsposts hiking miles sleep Turkey
+                international Tripitparis.</p>
+            <a href="#">Read More>
+            </a>
+</div>
+</div>
+
+
+
     <style>
         .txt-2{display: flex;
-            align-items: center}
+            align-items: center;
+            width: 1750px;
+            margin:0 auto;}
         .txt-2 > div{width: 50%;}
         .txt-2 > div > img{ width:100%}
         .txt-2 > div > b{font-size:40px;}
         .txt-2 > div > p{font-size:34px;
-                        color:#545454;
-                    }
+                        color:#545454;}
+
+        .reverse{flex-direction: row-reverse;}
+        .reverse > div > a{font-size: 36px;
+            background: #D9D9D9;
+               padding:20px 20px;
+               display: inline-block;
+               border-radius: 40px;
+               text-decoration: none;
+               color:#000;}
+        .reverse > :nth-child(1){width: 40%;}
+        .reverse > :nth-child(2){width: 60%;}
     </style>
+
 
 
 
